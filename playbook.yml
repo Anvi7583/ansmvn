@@ -4,8 +4,8 @@
   tasks: 
     - name: Copy WAR file to Tomact
       copy: 
-        src: "/var/snap/jenkins/4865/ansmaven/target/mavenans.war"
-        dest: "/opt/tomcat/target/mavenans.war"
+        src: "/var/snap/jenkins/4865/webapps/ansmaven/target/mavenans.war"
+        dest: "/opt/tomcat/webapps/mavenans.war"
         remote_src: no
        
     - name: Restart Tomcat
